@@ -23,7 +23,7 @@ export default function Home() {
 
       <div className="relative z-10 space-y-4 text-gray-200">
         <p className="mb-3 text-lg leading-relaxed tracking-wide">
-          I'm <strong>Ariba</strong>, a WordPress & Frontend Developer who builds
+          I&apos;m <strong>Ariba</strong>, a WordPress & Frontend Developer who builds
           modern, high-performance websites.
         </p>
         <p className="mb-3 text-lg leading-relaxed tracking-wide">
@@ -39,7 +39,6 @@ export default function Home() {
   ),
   image: "/screenshots/slide1.png",
 },
-
    {
   id: "skills",
   title: "My Skills",
@@ -239,7 +238,7 @@ export default function Home() {
   image: "/screenshots/focus.png",
 },
 
-   {
+    {
   id: "thanks",
   title: "Thank You",
   subtitle: "Let's connect",
@@ -251,7 +250,7 @@ export default function Home() {
       className="p-8 rounded-3xl bg-gradient-to-tr from-indigo-900/40 via-gray-900/40 to-purple-900/30 border border-indigo-500/40 shadow-xl text-center backdrop-blur-md"
     >
       <p className="text-lg mb-4">
-        That was a quick overview of my work. I'm always open to talk about{" "}
+        That was a quick overview of my work. I&apos;m always open to talk about{" "}
         <span className="text-indigo-300 font-semibold">CMS</span>,{" "}
         <span className="text-purple-300 font-semibold">Frontend</span>, or{" "}
         <span className="text-cyan-300 font-semibold">Performance</span>.
@@ -317,8 +316,9 @@ export default function Home() {
     if (s) s.scrollIntoView({ behavior: "smooth", block: "center" });
   };
 
+
   // ----- Render -----
- if (!showPortfolio) {
+if (!showPortfolio) {
   return (
     <div className="relative min-h-screen w-full flex items-center justify-center p-8 bg-gradient-to-br from-purple-900 via-gray-900 to-blue-900 overflow-hidden">
       {/* Animated Background Elements */}
@@ -337,7 +337,7 @@ export default function Home() {
         />
       ))}
 
-      <div className="relative z-10 flex flex-col md:flex-row items-center justify-center space-y-12 md:space-y-0 md:space-x-20 max-w-6xl w-full">
+    <div className="relative z-10 flex flex-col md:flex-row items-center justify-center space-y-12 md:space-y-0 md:space-x-20 max-w-6xl w-full">
         {/* Left Section */}
         <div className="text-left flex flex-col items-start space-y-6">
           <motion.h1
@@ -382,7 +382,7 @@ export default function Home() {
           </motion.button>
         </div>
 
-        {/* Right Section: Animated Floating Card */}
+       {/* Right Section */}
         <motion.div
           initial={{ x: 100, opacity: 0, scale: 0.8, rotateY: 30 }}
           animate={{ x: 0, opacity: 1, scale: 1, rotateY: 0 }}
