@@ -138,7 +138,7 @@ export default function Home() {
           <span className="text-pink-400 font-semibold"> modern frontends</span> using Next.js and Tailwind.
         </p>
         <p className="text-lg">
-          One of my key projects was <strong className="text-pink-400">49 Pound</strong> — a fully responsive, SEO-friendly website with interactive UI components.
+          One of my key projects was <strong className="text-pink-400">49 Pound</strong>, a fully responsive, SEO-friendly website with interactive UI components.
         </p>
       </div>
     </div>
@@ -162,43 +162,74 @@ export default function Home() {
   ),
 },
 
-    {
+{
   id: "headless",
   title: "Headless CMS",
   subtitle: "WordPress → Next.js",
   content: (
     <motion.div
-      initial={{ opacity: 0, y: 20 }}
+      initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8, ease: "easeOut" }}
-      className="relative p-6 rounded-2xl bg-gradient-to-br from-indigo-800/40 to-purple-900/30 border border-indigo-500/40 shadow-lg backdrop-blur-sm overflow-hidden"
+      transition={{ duration: 1, ease: "easeOut" }}
+      className="relative p-10 rounded-3xl bg-gradient-to-br from-gray-900 via-indigo-950/30 to-black border border-gray-700 shadow-xl backdrop-blur-sm"
     >
-      <div className="absolute inset-0 bg-gradient-to-t from-transparent via-indigo-900/20 to-transparent animate-pulse opacity-60" />
-      <p className="mb-4 text-gray-200">
-        Built a <strong>Headless WordPress</strong> setup for 49 Pound Social using the REST API — 
-        seamlessly connected to a <strong>Next.js</strong> frontend for instant loading.
-      </p>
+      <div className="relative z-10 space-y-5 text-gray-200">
+      
 
-      <div className="flex justify-around mt-6 items-center">
-        <div className="text-center">
-          <div className="text-2xl font-bold text-blue-400">WP</div>
-          <p className="text-xs opacity-70">Backend</p>
-        </div>
-        <div className="text-3xl text-indigo-400">→</div>
-        <div className="text-center">
-          <div className="text-2xl font-bold text-cyan-400">API</div>
-          <p className="text-xs opacity-70">Bridge</p>
-        </div>
-        <div className="text-3xl text-indigo-400">→</div>
-        <div className="text-center">
-          <div className="text-2xl font-bold text-pink-400">Next.js</div>
-          <p className="text-xs opacity-70">Frontend</p>
+        <p className="text-lg leading-relaxed">
+          Developed a <span className="text-indigo-400 font-semibold">Headless CMS</span> setup for{" "}
+          <strong className="text-pink-400">49 Pound Social</strong>, combining the power of{" "}
+          <span className="text-blue-400 font-semibold">WordPress</span> for content and{" "}
+          <span className="text-cyan-400 font-semibold">Next.js</span> for blazing-fast performance.
+        </p>
+
+        <ul className="list-disc pl-6 space-y-2 text-gray-300/90 text-base">
+          <li>Used WordPress REST API to fetch live data (blogs, pages, images) dynamically into the Next.js frontend.</li>
+          <li>Frontend auto-updates whenever content changes in WordPress<span className="text-emerald-400 font-medium">no manual deploys needed.</span></li>
+          <li>Achieved <span className="text-yellow-400 font-semibold">5× faster load times</span> and smoother scalability.</li>
+          <li>Focused on a clean, modular data flow and efficient architecture.</li>
+        </ul>
+
+        {/* Flow visual */}
+        <div className="mt-10 flex justify-center items-center gap-8">
+          <motion.div
+            whileHover={{ scale: 1.05 }}
+            className="relative bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-2xl border border-gray-700 shadow-md text-center"
+          >
+            <div className="text-2xl font-bold text-blue-400">WP</div>
+            <p className="text-xs opacity-70">Backend</p>
+          </motion.div>
+
+          <motion.div whileHover={{ scale: 1.1 }} className="text-4xl text-indigo-400 font-bold">
+            →
+          </motion.div>
+
+          <motion.div
+            whileHover={{ scale: 1.05 }}
+            className="relative bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-2xl border border-gray-700 shadow-md text-center"
+          >
+            <div className="text-2xl font-bold text-cyan-400">REST API</div>
+            <p className="text-xs opacity-70">Bridge</p>
+          </motion.div>
+
+          <motion.div whileHover={{ scale: 1.1 }} className="text-4xl text-indigo-400 font-bold">
+            →
+          </motion.div>
+
+          <motion.div
+            whileHover={{ scale: 1.05 }}
+            className="relative bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-2xl border border-gray-700 shadow-md text-center"
+          >
+            <div className="text-2xl font-bold text-pink-400">Next.js</div>
+            <p className="text-xs opacity-70">Frontend</p>
+          </motion.div>
         </div>
       </div>
     </motion.div>
   ),
   image: "/screenshots/headless.png",
 },
+
 
     {
   id: "ongoing",
@@ -235,38 +266,59 @@ export default function Home() {
   title: "My Focus Areas",
   subtitle: "What I'm currently improving",
   content: (
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
       {[
         {
           title: "Advanced Animations",
           desc: "Exploring deeper animation techniques with Framer Motion to make interfaces more interactive and engaging.",
+          icon: "",
+          color: "from-indigo-500/30 via-purple-500/20 to-transparent hover:from-indigo-600/40 hover:via-purple-500/30 hover:to-transparent",
         },
         {
           title: "WordPress Mastery",
           desc: "Learning WordPress development more deeply, from theme structure and custom APIs to performance optimization and scalability.",
+          icon: "",
+          color: "from-blue-500/30 via-cyan-500/20 to-transparent hover:from-blue-600/40 hover:via-cyan-500/30 hover:to-transparent",
         },
         {
           title: "Headless CMS",
           desc: "Understanding Headless WordPress and modern CMS workflows, connecting WordPress with Next.js for faster, flexible builds.",
+          icon: "",
+          color: "from-pink-500/30 via-violet-500/20 to-transparent hover:from-pink-600/40 hover:via-violet-500/30 hover:to-transparent",
         },
       ].map((item, i) => (
         <motion.div
           key={i}
-          initial={{ opacity: 0, scale: 0.8 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          whileHover={{ scale: 1.05, rotate: 1 }}
-          transition={{ duration: 0.6, ease: "easeOut", delay: i * 0.1 }}
-          className="p-6 text-center rounded-2xl bg-gradient-to-br from-gray-800/50 via-gray-900/40 to-black/40 border border-gray-700 shadow-lg hover:shadow-indigo-500/30 transition-all duration-300"
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          whileHover={{ scale: 1.05 }}
+          transition={{ duration: 0.6, ease: "easeOut", delay: i * 0.15 }}
+          className={`relative overflow-hidden p-8 rounded-3xl border border-gray-700 bg-gradient-to-br ${item.color} backdrop-blur-sm shadow-xl transition-all duration-500 group`}
         >
-          <h4 className="font-bold text-xl text-indigo-300">{item.title}</h4>
-          <p className="text-sm opacity-70 mt-2">{item.desc}</p>
+          {/* Inner glass layer */}
+          <div className="absolute inset-0 bg-gradient-to-br from-gray-900/60 via-gray-950/40 to-black/60 rounded-3xl opacity-90"></div>
+
+          {/* Floating accent circle */}
+          <div className="absolute -top-10 -right-10 w-32 h-32 bg-gradient-to-tr from-indigo-500/20 via-purple-500/20 to-pink-500/20 rounded-full blur-3xl opacity-40 group-hover:opacity-60 transition-all duration-500" />
+
+          <div className="relative z-10 text-center">
+            <div className="text-4xl mb-4">{item.icon}</div>
+            <h4 className="font-bold text-xl text-indigo-300 tracking-wide mb-3">
+              {item.title}
+            </h4>
+            <p className="text-sm leading-relaxed text-gray-300/90 opacity-90 group-hover:opacity-100 transition-opacity duration-300">
+              {item.desc}
+            </p>
+
+            {/* Subtle underline effect */}
+            <div className="mt-4 w-16 h-1 mx-auto bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-full opacity-60 group-hover:opacity-100 transition-all duration-300"></div>
+          </div>
         </motion.div>
       ))}
     </div>
   ),
   image: "/screenshots/focus.png",
 },
-
 
     {
   id: "thanks",
