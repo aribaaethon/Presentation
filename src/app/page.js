@@ -12,10 +12,10 @@ export default function Home() {
 
   // ----- Slide Data -----
   const SECTIONS = [
-    {
+ {
   id: "about",
   title: "About Me",
-  subtitle: "Assalam o Alaikum",
+  subtitle: "Assalam o Alaikum!",
   content: (
     <div className="relative z-10 p-8 md:p-12 rounded-3xl bg-gradient-to-tr from-black/70 via-gray-900/50 to-black/60 border border-gray-800 shadow-2xl">
       {/* Subtle background glow */}
@@ -23,41 +23,53 @@ export default function Home() {
 
       <div className="relative z-10 space-y-4 text-gray-200">
         <p className="mb-3 text-lg leading-relaxed tracking-wide">
-          I&apos;m <strong>Ariba</strong>, a WordPress & Frontend Developer who builds
-          modern, high-performance websites.
+          I&apos;m <strong>Ariba</strong>, a passionate Frontend & WordPress Developer who loves turning ideas into modern, high-performing websites.
         </p>
         <p className="mb-3 text-lg leading-relaxed tracking-wide">
-          I love elegant UI, fast code and thoughtful UX.
+          I enjoy mixing creativity with clean code, making websites that don’t just work well, but feel amazing to use.
         </p>
-        <ul className="list-disc pl-5 space-y-2 text-sm opacity-90">
-          <li>WordPress (custom themes, plugins, APIs)</li>
-          <li>Next.js (SSG/ISR/Edge-ready)</li>
-          <li>Tailwind CSS (utility-first, design systems)</li>
-        </ul>
+        <p className="mb-3 text-lg leading-relaxed tracking-wide">
+          I&apos;ve worked on several projects, from full WordPress builds to modern Headless CMS setups using Next.js.
+        </p>
+        <p className="mb-3 text-lg leading-relaxed tracking-wide">
+          My goal is simple: to build websites that are beautiful, fast, and effortless to manage.
+        </p>
       </div>
     </div>
   ),
   image: "/screenshots/slide1.png",
 },
-   {
+
+  {
   id: "skills",
   title: "My Skills",
-  subtitle: "What I do well",
+  subtitle: "What I Do Well",
   content: (
     <div className="relative z-10 p-8 md:p-12 rounded-3xl bg-gradient-to-tr from-black/70 via-gray-900/50 to-black/60 border border-gray-800 shadow-2xl">
       {/* Background glow for premium effect */}
       <div className="absolute -inset-px rounded-3xl blur-2xl opacity-20 bg-gradient-to-r from-purple-500 to-indigo-500 mix-blend-screen" />
 
       <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-6 text-gray-200">
+        {/* Frontend */}
         <div className="p-6 bg-gray-900/40 rounded-xl border border-gray-800 shadow-lg hover:shadow-indigo-500/40 transition-shadow duration-500">
-          <h4 className="font-semibold mb-2 text-lg text-indigo-400 tracking-wide">Frontend</h4>
-          <p className="opacity-90">Next.js • React • Tailwind • Animations</p>
-          <p className="mt-2 opacity-80">Performance-first component design</p>
+          <h4 className="font-semibold mb-2 text-lg text-indigo-400 tracking-wide">Frontend Development</h4>
+          <p className="opacity-90">Next.js • React • Tailwind CSS • Animations</p>
+          <ul className="mt-2 opacity-80 list-disc pl-5 space-y-1 text-sm">
+            <li>Creating fast, responsive, and modern UIs</li>
+            <li>Building reusable components with performance-first design</li>
+            <li>Adding smooth animations and interactions for better UX</li>
+          </ul>
         </div>
+
+        {/* WordPress */}
         <div className="p-6 bg-gray-900/40 rounded-xl border border-gray-800 shadow-lg hover:shadow-purple-500/40 transition-shadow duration-500">
-          <h4 className="font-semibold mb-2 text-lg text-purple-400 tracking-wide">WordPress</h4>
-          <p className="opacity-90">Custom themes • Plugins • REST / GraphQL</p>
-          <p className="mt-2 opacity-80">Headless CMS setups (WP → Next)</p>
+          <h4 className="font-semibold mb-2 text-lg text-purple-400 tracking-wide"> WordPress Development</h4>
+          <p className="opacity-90">Custom Themes • Plugins • REST API Integration</p>
+          <ul className="mt-2 opacity-80 list-disc pl-5 space-y-1 text-sm">
+            <li>Converting designs into dynamic WordPress websites</li>
+            <li>Making WordPress websites easy to manage for non-technical users</li>
+            <li>Working with Headless CMS setups (WordPress → Next.js)</li>
+          </ul>
         </div>
       </div>
     </div>
@@ -65,9 +77,10 @@ export default function Home() {
   image: "/screenshots/skills.png",
 },
 
+
  {
   id: "wp-projects",
-  title: "WordPress Projects",
+  title: "WordPress Project",
   subtitle: "Selected Work (WordPress)",
   content: (
     <div className="relative z-10 p-8 md:p-12 rounded-3xl bg-gradient-to-tr from-black/70 via-gray-900/50 to-black/60 border border-gray-800 shadow-2xl">
@@ -76,13 +89,15 @@ export default function Home() {
 
       <div className="relative z-10 text-gray-200 space-y-4">
         <p className="text-lg mb-2">
-          Built multiple client websites with a focus on <span className="text-blue-400 font-semibold">custom design</span>,
-          <span className="text-purple-400 font-semibold"> SEO optimization</span>, and performance.
+          Developed multiple websites focusing on <span className="text-blue-400 font-semibold">custom design</span> and high performance.
         </p>
-        <p className="text-lg">
-          One of my favorite projects was the <strong className="text-pink-400">Aethon</strong> website —
-          a fully customized WordPress build.
+        <p className="text-lg mb-2">
+          Worked on company projects, including the <strong className="text-pink-400">Aethon</strong> website, our official site built completely in WordPress.
         </p>
+        <p className="text-lg mb-2">
+          Focused on creating a clean, modern design that reflects our brand identity.
+        </p>
+  
       </div>
     </div>
   ),
@@ -106,10 +121,11 @@ export default function Home() {
 },
 
 
+
 {
   id: "frontend",
-  title: "Frontend Projects",
-  subtitle: "Selected Work (Next.js & Tailwind)",
+  title: "Frontend Project",
+  subtitle: "Selected Work (Next.js , Tailwind , Headless CMS)",
   content: (
     <div className="relative z-10 p-8 md:p-12 rounded-3xl bg-gradient-to-tr from-black/70 via-gray-900/50 to-black/60 border border-gray-800 shadow-2xl">
       {/* Background glow for premium effect */}
@@ -214,13 +230,26 @@ export default function Home() {
   image: "/screenshots/ongoing.png",
 },
 
-    {
+   {
   id: "focus",
   title: "My Focus Areas",
-  subtitle: "What I care about",
+  subtitle: "What I'm currently improving",
   content: (
     <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-      {["Performance", "Scalable Code", "UI/UX"].map((item, i) => (
+      {[
+        {
+          title: "Advanced Animations",
+          desc: "Exploring deeper animation techniques with Framer Motion to make interfaces more interactive and engaging.",
+        },
+        {
+          title: "WordPress Mastery",
+          desc: "Learning WordPress development more deeply, from theme structure and custom APIs to performance optimization and scalability.",
+        },
+        {
+          title: "Headless CMS",
+          desc: "Understanding Headless WordPress and modern CMS workflows, connecting WordPress with Next.js for faster, flexible builds.",
+        },
+      ].map((item, i) => (
         <motion.div
           key={i}
           initial={{ opacity: 0, scale: 0.8 }}
@@ -229,14 +258,15 @@ export default function Home() {
           transition={{ duration: 0.6, ease: "easeOut", delay: i * 0.1 }}
           className="p-6 text-center rounded-2xl bg-gradient-to-br from-gray-800/50 via-gray-900/40 to-black/40 border border-gray-700 shadow-lg hover:shadow-indigo-500/30 transition-all duration-300"
         >
-          <h4 className="font-bold text-xl text-indigo-300">{item}</h4>
-          <p className="text-sm opacity-70 mt-2">Continuous improvement</p>
+          <h4 className="font-bold text-xl text-indigo-300">{item.title}</h4>
+          <p className="text-sm opacity-70 mt-2">{item.desc}</p>
         </motion.div>
       ))}
     </div>
   ),
   image: "/screenshots/focus.png",
 },
+
 
     {
   id: "thanks",
